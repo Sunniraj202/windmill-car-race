@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .anime{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .circle{
+            height: 100px;
+            width: 100px;
+            background-color: brown;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .stick1{
+           position: absolute;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+            width: 300px;
+            height: 40px;
+            background-color: yellow;
+            border-radius: 50%;
+        }
+        .stick2{
+            position: absolute;
+            width: 300px;
+            height: 40px;
+            background-color: yellow;
+            border-radius: 50%;
+        }
+            @keyframes blade1{
+            0%{
+                transform: rotate(0deg);
+            }
+            25%{
+                transform: rotate(90deg);
+            }
+            50%{
+                transform: rotate(180deg);
+            }
+            75%{
+                transform: rotate(270deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .stick1{
+            animation: blade1 5s linear 0.5s infinite ;
+        }
+        @keyframes blade2{
+            0%{
+                transform: rotate(-0deg);
+            }
+            25%{
+                transform: rotate(-90deg);
+            }
+            50%{
+                transform: rotate(-180deg);
+            }
+            75%{
+                transform: rotate(-270deg);
+            }
+            100%{
+                transform: rotate(-360deg);
+            }
+        }
+        .stick2{
+            animation: blade2 5s linear 0.5s infinite ;
+        } */
+    </style>
+</head>
+<body>
+    <div class="anime">
+        <div class="circle"></div>
+        <div class="stick1 stick"></div>
+        <div class="stick2 stick"></div>
+    </div>
+    
+    
+</body>
+</html>
